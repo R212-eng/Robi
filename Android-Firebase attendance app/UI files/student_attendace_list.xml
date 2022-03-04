@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_txtV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_txtV2" />
+
+    <TextView
+        android:id="@+id/Dept_txtV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_txtV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meal_txtV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="4dp"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dept_txtV2" />
+
+    <CheckBox
+        android:id="@+id/breakfast"
+        android:layout_width="34dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/id_txtV2"
+        app:layout_constraintTop_toBottomOf="@+id/MealB2" />
+
+    <CheckBox
+        android:id="@+id/lunch"
+        android:layout_width="34dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/breakfast"
+        app:layout_constraintTop_toBottomOf="@+id/MealL2" />
+
+    <CheckBox
+        android:id="@+id/dinner"
+        android:layout_width="34dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/lunch"
+        app:layout_constraintTop_toBottomOf="@+id/MealD2" />
+
+    <TextView
+        android:id="@+id/MealD2"
+        android:layout_width="47dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="40dp"
+        android:text="Dinner"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/Dept_txtV2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MealL2"
+        android:layout_width="47dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="30dp"
+        android:text="Lunch"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/MealD2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MealB2"
+        android:layout_width="47dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
+        android:text="Breakfast"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/name_txtV2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

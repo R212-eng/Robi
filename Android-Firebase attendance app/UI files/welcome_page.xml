@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:layout_centerVertical="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context=".Welcome_page">
+
+    <TextView
+        android:id="@+id/welcomeT"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:fontFamily="cursive"
+        android:text="Welcome to the Campus Cafe application"
+        android:textAlignment="center"
+        android:textColor="#1D32A7"
+        android:textColorHint="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/aau"
+        android:layout_width="165dp"
+        android:layout_height="76dp"
+        android:contentDescription="Addis Ababa University logo"
+        app:srcCompat="@drawable/aau" />
+
+    <Button
+
+        android:id="@+id/welcomeB"
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:isScrollContainer="true"
+        android:text="Continue" />
+
+</LinearLayout>
