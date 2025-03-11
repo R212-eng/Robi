@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+
+   body{
+    /* background-color:silver; */
+    background-image: url("Images/Donation.jpg");
+    background-repeat: no-repeat;   
+    background-size:cover;
+    }
+
+    .container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+    .ind1{
+     font-size: 18.6px;
+     flex: 1;
+     order:1;
+     margin-bottom: 0.3rem;
+    }
+    
+    .ind2{
+     flex:1;
+     order:2;
+    }
+
+   .theme{
+    color: rgb(122, 47, 44);
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight:600;
+    font-style: sans-serif;
+   }
+
+   .indent{
+    position: relative;
+    margin: 1rem 10px 10px 10px;
+   }
+   .field1{
+    margin-right: 40rem;
+    margin-left: 10rem;
+   }
+  
+
+   
+   .chkbx{ 
+    margin-top: 3.5rem;
+    /* width: 3rem; */
+    margin-left: 7rem;
+    accent-color: rgb(150, 55, 52);;
+   
+   }
+
+   span{
+    font-size: 14px;
+    text-align:center;
+   }
+   
+   .submit1{
+    text-align:center;
+    font-style: normal;
+    color: antiquewhite;
+    margin:auto; 
+    display:flex; 
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    padding: 10px 10px 10px 10px;
+    /* border-color: black; */
+     background-color: rgb(122, 47, 44);
+   }
+   .submit1:hover{
+    background-color: rgb(150, 55, 52);
+    }  
+   p{
+    font-weight: 600;
+   }
+   </style>
+   
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+   integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+   crossorigin="anonymous"/>
+
+   <title>Donation Form</title>
+
+</head>
+
+<body>
+
+<form action="/Registered" method="post">
+   <div class="field1"> <h2 class="theme">Donation Form</h2></div>
+<div>
+    <div class="field2">
+   <div class="container"> <p class="indent ind1">Full Name </p><input type="text" name="name" placeholder="Full Name" class="indent ind2" required>  </div><br>
+   <div class="container"> <p class="indent ind1">E-mail </p><input type="email" name="email" placeholder="Email" class="indent ind2" required> </div> <br>  
+   <div class="container"> <p class="indent ind1">Phone Number </p><input id="phone" type="tel" name="phone" placeholder="Phone Number" class="indent ind2" pattern="[0-9]{10}"
+      required> </div> <br>   
+   <div class="container"> <p class="indent ind1">To be paid until </p><input type="date" name="date" placeholder="Intended Payment Deadline" class="indent ind2" required> </div><br> 
+   <div class="container"><p class="indent  ind1">Amount </p>  <input title="amt" type="number" min="0" name="amount" class="indent ind2" size="4" required> 
+    <select title="currency-1" name="currency" id="currency" class="indent ind2"> 
+        <option value="USD">USD</option>
+        <option value="USD">Birr</option>
+     </select></div><br> 
+     <div class="container"> <p class="indent ind1">Purpose </p><input type="text" name="purpose" placeholder="Purpose of Donation" class="indent ind2"></input> </div> <br>
+    </div>  
+    
+     <div id= chkbx class="field1"><input title="checkbox" type="checkbox" name="confirm" class="indent chkbx" onchange="document.getElementById('submit1').disabled = !this.checked;" /> <span>By checking this box I confirm to make the donation.</span> <br>
+      <button id= submit1 type="submit" name="submit" class="indent submit1" disabled><b>Submit<b></button>      
+   </div>
+      
+</div>
+</form>
+</body>
+<script> 
+// const phoneInputField = document.querySelector("#phone");
+//    const phoneInput = window.intlTelInput(phoneInputField, {
+//      utilsScript:
+//        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+//    });
+</script>
+
+</html>
