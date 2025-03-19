@@ -21,7 +21,7 @@ if(isset($_POST['signUp'])){
             if($conn->query($insertQuery)===TRUE){
                 // header("location: Login.php");
                 // print_r("data inserted");
-                header('Location: after_login.php');
+                header('Location:after_login.php');
             }
             else{
                 echo "Error:".$conn->error;
