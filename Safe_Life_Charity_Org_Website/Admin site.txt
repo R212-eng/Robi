@@ -1,0 +1,16 @@
+// import {initializeApp} from "firebase/app";
+// import {getAnalytics} from "firebase/analytics";
+
+// const firebaseConfig = {
+// apiKey: "AIzaSyDmJKRSmpSvreXt6T_YdbpTcV-XkY2mUto",
+// authDomain: "safe-life-charity-org-website.firebaseapp.com",
+// projectId: "safe-life-charity-website",
+// storageBucket: "safe-life-charity-org-website.appspot.com",
+// messagingSenderId: "983963588763",
+// appId: "1:983963588763:web:1cb64ef892186ccdbf4e3e",
+// measurementId: "G-0C53FCQR9K"
+
+// }
+
+const firebaseApp = initializeApp(firebaseConfig);
+const analytics = getAnalytics(firebaseApp);
