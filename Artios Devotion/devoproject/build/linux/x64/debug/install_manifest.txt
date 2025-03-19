@@ -1,0 +1,11 @@
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/devoproject
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/robenus/Documents/Devotion/devoproject/build/linux/x64/debug/bundle/data/flutter_assets/version.json

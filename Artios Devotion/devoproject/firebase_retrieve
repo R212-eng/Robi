@@ -1,0 +1,196 @@
+class GetHomepage extends StatefulWidget {
+  final String documentId;
+  GetHomepage(this.documentId);
+  Widget build(BuildContext context) {
+    CollectionReference HomePage =
+        FirebaseFirestore.instance.collection('HomePage');
+    return FutureBuilder<DocumentSnapshot>(
+      future: HomePage.doc(documentId).get(),
+      builder:
+          (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
+        if (snapshot.hasError) {
+          return Text("Something went wrong ");
+        }
+        if (snapshot.hasData && !snapshot.data!.exists) {
+          return Text("Document does not exist");
+        }
+        if (snapshot.connectionState == ConnectionState.done) {
+          Map<String, dynamic> data =
+              snapshot.data!.data() as Map<String, dynamic>;
+          return Text("Date: ${data['Date']}");
+        }
+        return Text("loading");
+      },
+    );
+  }
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //_buildList(QuerySnapshot<Object?>? data) {}
+
+  /* 
+  Widget IconButton1() {
+    return Positioned(
+      top: 0.0,
+      left: 60.0,
+      right: 0.0,
+      bottom: 0.0,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: new IconButton(
+            icon: Icon(
+              Icons.cancel,
+              color: Colors.red,
+            ),
+            onPressed: () {}), //
+      ),
+    );
+  }       child: new IconButton(
+            icon: Icon(
+              Icons.cancel,
+              color: Colors.red,
+            ),
+            onPressed: () {}), //
+      ),
+    );
+  }*/
+  
+  
+  
+  /* Widget _buildList(QuerySnapshot snapshot) {
+    return ListView.builder(
+        itemCount: devolist.length,
+        itemBuilder: (context, index) {
+          //final doc = snapshot.docs[index];
+          return Text("index");
+        });
+  }*/
+  
+  
+  
+  /*Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                        padding: const EdgeInsets.only(top: 18),
+                        alignment: Alignment.topCenter,
+                        child: new IconButton(
+                            icon: Icon(Icons.arrow_back), onPressed: () {})),
+                    //Spacer(),
+
+                    Container(
+                        padding: const EdgeInsets.only(top: 25),
+                        child: (Text(''))),
+
+                    Container(
+                      padding: const EdgeInsets.only(top: 18),
+                      alignment: Alignment.topCenter,
+                      child: new IconButton(
+                          icon: Icon(Icons.arrow_forward), onPressed: () {}),
+                    )
+                  ]),
+              /* StreamBuilder<QuerySnapshot>(
+                  stream: FirebaseFirestore.instance
+                      .collection("HomePage")
+                      .snapshots(),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) return LinearProgressIndicator();
+                    return Expanded(child: _buildlist(snapshot.requireData));
+                  }),/*
+                  /*
+              Container(
+                padding: const EdgeInsets.only(top: 5),
+                alignment: Alignment.topCenter,
+                child: Text('ማለዳዬን ለጌታ',
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
+              ),
+              Container(
+                padding: const EdgeInsets.only(top: 5),
+                alignment: Alignment.topCenter,
+              ),
+              Container(
+                padding: const EdgeInsets.only(top: 5),
+                alignment: Alignment.topCenter,
+                child: Text(
+                  'በዚህ ሳምንት የማሰላስለው የቃሉ እውነት፦ ማለዳ ዕድል ነው! ስለዚህ በቃልና በጸሎት መጀመር አለበት፡፡  የዚህ ሳምንት ፀሎት፦ ጌታ ሆይ በየማለዳዬ ላይ አንተን አንግሼ ቀሪውን ዘመኔን ለክብርህ እንድኖር እርዳኝ !!',
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.only(top: 5),
+                alignment: Alignment.topCenter,
+                child: Text('',
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
+              )
+            ]),*/
+
+        //body: Center(
+        //  child:
+        //    new IconButton(icon: Icon(Icons.arrow_back), onPressed: () {})),
+
+        //leading:
+        //  IconButton(icon: Icon(Icons.arrow_forward), onPressed: () {})),
+
+
+
+ //bottom: const TabBar(tabs: [
+          // Tab(icon: Icon(Icons.directions_car)),
+          //Tab(icon: Icon(Icons.directions_transit)),
+          //Tab(icon: Icon(Icons.directions_bike)),
+          //]),
+//import 'package:flutter/cupertino.dart';
+//import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+//import 'package:flutter/foundation.dart';
+//import 'package:flutter/rendering.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:timezone/timezone.dart' as tz;
+import 'package:timezone/data/latest.dart' as tzData;
+
+final _localNotificationsPlugin = FlutterLocalNotificationsPlugin();
+
+Future<void> setup() async {
+  // #1
+  const androidSetting = AndroidInitializationSettings('@mipmap/ic_launcher');
+  const iosSetting = IOSInitializationSettings();
+
+  // #2
+  const initSettings =
+      InitializationSettings(android: androidSetting, iOS: iosSetting);
+
+  // #3
+  await _localNotificationsPlugin.initialize(initSettings).then((_) {
+    debugPrint('setupPlugin: setup success');
+  }).catchError((Object error) {
+    debugPrint('Error: $error');
+  });
+}
+
+
+
+

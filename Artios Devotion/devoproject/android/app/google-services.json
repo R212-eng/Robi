@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "14640898186",
+    "project_id": "devotion-app-235d9",
+    "storage_bucket": "devotion-app-235d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14640898186:android:9243a43bfb01c858ad8d73",
+        "android_client_info": {
+          "package_name": "com.example.devoproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14640898186-05jhad3g6obj1bsv69cat8cgdg1cl4lo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMRR_LBjvGZZK8nY-VJ5TS7v8jOtxNkRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14640898186-05jhad3g6obj1bsv69cat8cgdg1cl4lo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "14640898186-0i94mme4h0tv0m4apui9oahf9imgusfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.devoproject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
