@@ -1,0 +1,215 @@
+.logo{
+    height: 6rem;
+    width: 6rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    }
+    .img{
+        padding-top: 1rem; 
+        height: 20rem;
+        width: 20rem; 
+        padding-bottom: 2rem;   
+    }
+    .img_abt{
+        width: 450px; 
+        border-radius: 50px;
+        box-shadow: 0 10px 30px rgba(0,0,1,0.8);
+        text-align: center
+    }
+    .body{
+      background-color:rgb(235, 235, 235);
+    }
+    .about{
+        padding-top: 1rem;
+        padding-bottom: 2.5rem;
+    }
+    .Recent{
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      background-color: whitesmoke;
+    }
+    .topdiv{
+        background-color:rgb(28, 104, 25);
+        display:block;
+        height: 5.7rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .navbut{
+        background-color:rgb(28, 104, 25);
+        margin-left: 1rem;
+        margin-right: 3rem;
+        cursor: pointer;
+        color: white;
+        border-color:rgb(28, 104, 25) !important; 
+         border-right:rgb(28, 104, 25);
+         border-top:rgb(28, 104, 25);
+         border-left:rgb(28, 104, 25);
+        border-bottom: rgb(34, 109, 32); 
+    }   
+    .Nav1{
+        padding-top: 1.5rem ;
+        position: relative;
+        margin-top: 10px; 
+        margin-right: 3rem; 
+        float: right;
+    }
+    h1{
+        padding-top: 0px;
+        text-align: center;   
+        line-height: 1.5;
+    }
+    h2,p {
+    padding-top: 1rem;
+     text-align: center;   
+     line-height: 1.5;
+    }
+
+    .anchor{
+    padding-right: 1rem ;
+    color: whitesmoke !important;
+    text-decoration: none !important;
+    }
+    .navbut:hover, .anchor:hover{
+    color: gold !important;
+    }
+    /* a.anchor_dep{
+        margin-top: 0px;
+    color: black;
+    text-decoration: none !important;   
+    } */
+    .rec{
+       margin-bottom: 2rem;
+    }
+   
+    table{
+        margin: auto auto;
+        width: 50%;  
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .td{
+        font-size: large;
+        color: black;
+     border-spacing: 8px 8px 8px 8px;
+     margin: 0 20px 0 20px;
+    text-align: center;
+    text-decoration: none;
+    }
+   .td_img{
+    margin: auto;
+    width: 50%;
+    border-spacing: 0 8px 0 8px;
+    display: flex;
+    }
+    .tspace{
+    margin-top: 1rem !important;
+    }
+    .firstimg,.ab_img,.p_rec{
+        padding-bottom: 3.5rem;
+    }
+      .footer-cls{
+        margin: auto footerauto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        background-color: rgb(28, 104, 25);
+        }
+        footer {
+          background-color: rgb(28, 104, 25);
+        }
+ .fotterset{
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+ }       
+ .Betesebimg{
+    width: 45%;
+    height: 45%;
+ }
+ .welcomeG{
+    font-family: Arial, sans-serif;
+    font-size: 6rem;
+    
+ }
+ .imagestds{
+    top: -5rem !important;
+    left: 200px;
+    width: 600px;
+    border-radius: 50px;
+    box-shadow: 0 20px 35px rgba(0,0,1,0.9);
+ }
+ .note1{
+  padding-left: 3rem;
+  line-height: 1.5;
+  font-size:xx-large;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+ }
+ .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+.centerimg{
+    top: 50px;
+    bottom: 50;
+    transform: translate(-50%,-50%);
+}
+.inputdecor{
+    background: rgb(28, 124, 25);
+    border-radius: 10px;
+   border: 80px;
+   color: whitesmoke;
+   transition: 0.7s;
+   width: 6.8rem;
+   height: 2.5rem;
+}
+.inputdecor:hover{
+    background: rgb(190, 190, 3);
+}
+.welcomeGg{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+
+ }
+ .iocnlink{
+    text-decoration: none;
+    padding: 5px;
+   
+ }
+ .iocnlink a{
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+ }
+.tablese{
+    margin: auto;
+    width: 0%;
+    border-spacing: 8px 8px 8px 8px;;
+}
+.copyright4{
+    text-align: center;
+    
+}
+.para{
+     text-align: center;
+     margin: 5%;
+}
+.fotterset3{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.logout{
+color: black  !important;
+z-index: 1;
+}
+.body{
+    background-color: rgb(212, 212, 212);
+}
+.welcomeGl{
+    font-family: Arial, sans-serif;
+    font-size: 4rem;
+}
